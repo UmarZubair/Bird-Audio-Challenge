@@ -60,8 +60,8 @@ def load_training_data():
 
     ff_array_path = config.get_training_path('ffbird')["DATA_ARRAY_PATH"]
     ww_array_path = config.get_training_path('wwbird')["DATA_ARRAY_PATH"]
-    X_train = np.concatenate((np.load(ff_array_path, ww_array_path)), axis=0)
-    y_train = np.concatenate((np.load(ff_array_path, ww_array_path)), axis=0)
+    X_train = np.concatenate((np.load(ff_array_path), np.load(ww_array_path)), axis=0)
+    y_train = np.concatenate((np.load(ff_array_path), np.load(ww_array_path)), axis=0)
     return X_train, y_train
 
 
