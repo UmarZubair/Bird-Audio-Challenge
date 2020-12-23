@@ -79,10 +79,9 @@ We used the pseudo label-approach where we included 1500 samples from test data 
 For ensembling, I used a simple approach to take the mean of either the high threshold values or the low threshold values. 
 Results:
 
-Best approach without ensembling:<br/>
-Public : 0.72406 Private : 0.70369<br/>
-Best 3 submissions ensembling:<br/>
-Public : 0.72619 Private : 0.70726<br/>
-Best 11 submissions ensembling:<br/>
-Public : 0.72926 Private : 0.70497<br/>
+|               | Public        | Private  |
+| ------------- |:-------------:| -----:|
+| Best submission without ensembling      | 0.72406 | 0.70369 |
+| Best 3 submissions ensembling      |  0.72619      |   0.70726 |
+| Best 11 submissions ensembling | 0.72926      |    0.70497 |
 
