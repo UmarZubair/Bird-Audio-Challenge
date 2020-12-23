@@ -72,6 +72,12 @@ The maximum accuracy we reached from the CRNN approach was 68.
 
 For the third model, we went back in search for CNN models and tried different models like Alexnet and LeNET. Yet a simple CNN model in the end turned out to perform the best. 3 layers of 48 filter size followed by 3 layers of 96 filter. With 2 dense layers of 384 and 1. Kernel size 3 in the first two and 5 in the third for both 48 and 96 layers. ReLU was used as the activation function and with data augmentation of shift range, height range and horizontal flip we were able to reach 72 accuracy on the public leaderboard. 
 
+|  Model               | Accuracy on public leaderboard        |
+| ------------- |:-------------:|
+| Covnet      | 0.69-0.70 | 
+| CRNN      | 0.68 | 
+| CNN      | 0.72 | 
+
 ### Training:
 We used the pseudo label-approach where we included 1500 samples from test data which had either more than 0.95 or less than 0.10 on the best submission. One thing we noticed was that both the samples of bird present and bird not present needed to be near equal. Otherwise, if for instance we only took 1000 test samples where all the samples had bird present and added it in training. Then the model was always resulting in 3-4 percent drop in accuracy.
 
